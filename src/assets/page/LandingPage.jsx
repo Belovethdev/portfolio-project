@@ -2,15 +2,15 @@
 
 import { motion } from "framer-motion";
 import HeroSection from "../component/HeroSection";
-// import AboutSection from "../component/AboutSection";
+import AboutSection from "../component/AboutSection";
 
 function LandingPage() {
     return (
         <>
-        <motion.div className="w-[1440px] h-[px]">
+        <div className="w-full h-[px] flex flex-col ">
             <HeroSection />
-            {/* <AboutSection/> */}
-        </motion.div>
+            <AboutSection/>
+        </div>
         </>
     );
 }

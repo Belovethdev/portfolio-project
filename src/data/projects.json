@@ -1,0 +1,34 @@
+
+{
+    "projects": [
+      {
+        "id": 1,
+        "image": "/images/frontend.jpg",
+        "img": "/images/yellowball.jng",
+        "title": "PLIT LEARN",
+        "sub": "(Educational Website)",
+        "description": "You will learn how to create visually appealing and highly interactive websites by mastering HTML5 and CSS3 for styling, JavaScript for adding interactivity and dynamic content, and popular frameworks like React, Angular, or Vue.js for building complex web applications."
+      },
+      {
+        "id": 2,
+        "image": "/images/backend.jpg",
+        "title": "Backend Development",
+        "sub": "(Educational Website)",
+        "description": "Master server-side programming and database management. You'll learn server-side languages like Python, Node.js, database management with SQL and NoSQL, API development and integration, authentication and security practices."
+        },
+      {
+        "id": 3,
+        "image": "/images/uiux.jpg",
+        "title": "UI/UX Design",
+        "sub": "(Educational Website)",
+        "description": "In the UI/UX Design course, you will learn to design user interfaces that are both functional and aesthetically pleasing by understanding user-centered design principles, creating wireframes, prototypes to test usability, using design tools like Figma, FigJam, and Miro."
+        },
+      {
+        "id": 4,
+        "image": "/images/datascience.jpg",
+        "title": "Data Science",
+        "sub": "(Educational Website)",
+        "description": "Our Data Science course equips you with essential skills in data analysis and machine learning. Learn to collect, clean, and manipulate data using Python and SQL, and gain expertise in statistical analysis and data visualization."
+      }
+    ]
+  }
