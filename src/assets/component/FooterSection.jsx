@@ -18,7 +18,7 @@ const FooterSection = () => {
     // };
     return (
         <div id='Contact'
-        className="min-h-[800px] bg-cover bg-center bg-no-repeat w-full h-[950px] md:py- px-6 md:px-78"
+        className="h-[] bg-cover bg-center bg-no-repeat w-full md:h-[900px] md:py- px-6 md:px-78"
           style={{ backgroundImage: `url(${bgmage})` }}>
             <div className='h-[600px] w-[1500px] absolute top-900 bg-[#0a0a0a] border-1 rounded-2xl max-w-7xl py-10 px mt-5 grid md:grid-cols-2 gap-30 items-start'>
                 <div className='w-[550px] mt-4 px-6 ml-5 rounded-2xl'>

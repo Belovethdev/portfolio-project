@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import bgImage from '../Image/background12.jpg';
+import bgImage from '/images/background3.png';
 
 
 const HeroSection = () => {
@@ -10,9 +10,9 @@ const HeroSection = () => {
     return(
         
         <section
-  className="min-h-screen bg-cover bg-center bg-no-repeat w-full 
+  className="min-h-screen bg-cover bg-center bg-no-repeat w-full
 "
-  style={{ backgroundImage: `url(${bgImage})` }}
+  style={{ backgroundImage: "url('images/" }}
 >
 
   <motion.div
