@@ -12,7 +12,7 @@ const HeroSection = () => {
         <section
   className="min-h-screen bg-cover bg-center bg-no-repeat w-full
 "
-  style={{ backgroundImage: "url('images/" }}
+  style={{ backgroundImage: "url('images/background3.jpg" }}
 >
 
   <motion.div

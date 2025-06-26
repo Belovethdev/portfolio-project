@@ -5,7 +5,7 @@
     "projects": [
       {
         "id": 1,
-        "image": "/image/hm.jpg",
+        "image": "/images/hm.jpg",
         "img": "/images/yellowball.jng",
         "title": "PLIT LEARN",
         "sub": "(Educational Website)",
