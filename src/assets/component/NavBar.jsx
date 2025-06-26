@@ -41,7 +41,7 @@ function Navbar() {
       <div className="md:px-50 px-20 py-3 md:py-4 flex justify-between items-center">
         {/* Logo */}
         <img
-          src="/src/assets/Image/logo.png"
+          src="/Image/logo.png"
           alt="Logo"
           className="md:w-[200px] md:h-[50px] w-[150px] h-[40px] cursor-pointer"
           onClick={() => {

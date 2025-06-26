@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion';
 import { div } from 'framer-motion/client';
-import bgmage from '../Image/Bcc 2.jpg';
+import bgmage from '/Image/Bcc 2.jpg';
 import React, { useState, useEffect } from 'react';
 
 const FooterSection = () => {
@@ -49,13 +49,13 @@ const FooterSection = () => {
                     <div className="text-sm space-y-2 mt-4">
                         <div className='flex items-center gap-3'>
                             <div className='w-6 h-6 bg-[#009D66] rounded-full flex items-center justify-center'>
-                            <img src="src/assets/image/call icon.png" alt="" className='w-4 h-4' />
+                            <img src="/Image/call icon.png" alt="" className='w-4 h-4' />
                            </div>
                            <p className='text-white'> +234 705 725 3514</p>
                         </div>
                         <div className='flex items-center gap-3'>
                             <div className='w-6 h-6 bg-[#009D66] rounded-full flex items-center justify-center'>
-                            <img src="src/assets/image/email icon.png" alt="" className='w-4 h-3' />
+                            <img src="/Image/email icon.png" alt="" className='w-4 h-3' />
                            </div>
                            <p className='text-white'> hello.oluwagbemiga@gmail.com</p>
                            <div className='flex gap-3 ml-30'> 
@@ -66,7 +66,7 @@ const FooterSection = () => {
                              >
                              <div className="bg-[#009D66] w-9 h-9 flex items-center justify-center  rounded-xl hover:bg-green-800">
                               <img
-                                src="src/assets/Image/linkedin.png"
+                                src="/Image/linkedin.png"
                                 alt="LinkedIn"
                                 className="w-5 h-5"
                               />
@@ -80,7 +80,7 @@ const FooterSection = () => {
                               >
                              <div className="bg-[#009D66] w-9 h-9 flex items-center justify-center rounded-xl hover:bg-green-800">
                              <img
-                              src="src/assets/Image/github.png"
+                              src="/Image/github.png"
                               alt="GitHub"
                               className="w-5 h-5"
                              />
@@ -122,7 +122,7 @@ const FooterSection = () => {
                      </form>
                      <div id='home' className="bg-[] w-8 h-8 flex absolute bottom-27.5 right-6 items-center justify-center rounded-xl hover:bg-green-950">
                              <img
-                              src="src/assets/Image/arrow.png"
+                              src="/Image/arrow.png"
                               alt="GitHub"
                               className="w-12 h-8"
                               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
