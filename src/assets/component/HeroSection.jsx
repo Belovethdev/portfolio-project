@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import bgImage from '../Image/background12.jpg';
+import bgImage from '/Image/background12.jpg';
 
 
 const HeroSection = () => {
@@ -76,7 +76,7 @@ const HeroSection = () => {
         >
           <div className="bg-[#009D66] w-12 h-12 flex items-center justify-center rounded-xl hover:bg-green-800">
             <img
-              src="src/assets/Image/linkedin.png"
+              src="/Image/linkedin.png"
               alt="LinkedIn"
               className="w-8 h-8"
             />
@@ -90,7 +90,7 @@ const HeroSection = () => {
         >
           <div className="bg-[#009D66] w-12 h-12 flex items-center justify-center rounded-xl hover:bg-green-800">
             <img
-              src="src/assets/Image/github.png"
+              src="/Image/github.png"
               alt="GitHub"
               className="w-8 h-8"
             />

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import bfImage from '../Image/background.jpg';
+import bfImage from '/Image/background.jpg';
 import ProjectCard from './ProjectCard';
 
 const AboutSection = () => {
@@ -12,8 +12,8 @@ const AboutSection = () => {
         <section
   id="About"
   className="min-h-[2400px] bg-cover bg-no-repeat w-full
-    bg-[url('/src/assets/Image/background3.jpg')]
-    md:bg-[url('/src/assets/Image/background.jpg')]
+    bg-[url('/Image/background3.jpg')]
+    md:bg-[url('/Image/background.jpg')]
   "
   style={{ backgroundPosition: 'center top' }}
 >
@@ -48,7 +48,7 @@ const AboutSection = () => {
             </div>
             <div id='Portfolio' className='flex md:py-36 px-6 md:px-75 justify-between mt-30'>
                 <div>
-                    <img src="src/assets/Image/1.jpg" alt="" className='md:w-[2300px] md:h-[250px]' />
+                    <img src="/Image/1.jpg" alt="" className='md:w-[2300px] md:h-[250px]' />
                 </div>
                 <div className='ml-70 -mt-7 '>
                     <div>
@@ -58,35 +58,35 @@ const AboutSection = () => {
                     <div className='flex gap-8'>
                         <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl h">
                         <img
-                        src="src/assets/Image/css.png"
+                        src="/Image/css.png"
                         alt="GitHub"
                         className="w-15 h-15"
                         />
                     </div>
                     <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl">
                         <img
-                        src="src/assets/Image/html.png"
+                        src="/Image/html.png"
                         alt="GitHub"
                         className="w-13 h-13"
                         />
                     </div>
                     <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
-                        src="src/assets/Image/tailwindcss.png"
+                        src="/Image/tailwindcss.png"
                         alt="GitHub"
                         className="w-17 h-11"
                         />
                     </div>
                     <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
-                        src="src/assets/Image/react.png"
+                        src="/Image/react.png"
                         alt="GitHub"
                         className="w-13 h-13"
                         />
                     </div>
                     <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
-                        src="src/assets/Image/vscode.png"
+                        src="/Image/vscode.png"
                         alt="GitHub"
                         className="w-13 h-13"
                         />
@@ -97,35 +97,35 @@ const AboutSection = () => {
                         <div className='flex gap-8'>
                         <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl h">
                         <img
-                        src="src/assets/Image/2.png"
+                        src="/Image/2.png"
                         alt="GitHub"
                         className="w-13 h-13"
                         />
                     </div>
                     <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl">
                         <img
-                        src="src/assets/Image/REDUX.png"
+                        src="/Image/REDUX.png"
                         alt="GitHub"
                         className="w-13 h-13"
                         />
                     </div>
                     <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
-                        src="src/assets/Image/saas.png"
+                        src="/Image/saas.png"
                         alt="GitHub"
                         className="w-17 h-11"
                         />
                     </div>
                     <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
-                        src="src/assets/Image/github.png"
+                        src="/Image/github.png"
                         alt="GitHub"
                         className="w-13 h-13"
                         />
                     </div>
                     <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
-                        src="src/assets/Image/js.png"
+                        src="/Image/js.png"
                         alt="GitHub"
                         className="w-40 h-13"
                         />
