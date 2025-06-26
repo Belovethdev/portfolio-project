@@ -11,17 +11,20 @@ const AboutSection = () => {
     return (
         <section
   id="About"
-  className="min-h-[3000px] bg-cover bg-no-repeat w-full"
-  style={{ backgroundImage: `url(${bfImage})`, backgroundPosition: 'center top 0%' }}
+  className="min-h-[2400px] bg-cover bg-no-repeat w-full
+    bg-[url('/src/assets/Image/background3.jpg')]
+    md:bg-[url('/src/assets/Image/background.jpg')]
+  "
+  style={{ backgroundPosition: 'center top' }}
 >
 
 
-            <div className="md:py-40 px-6 md:px-78">
-                <h2 className="text-[#009D66] text-6xl md:text-6xl font-extrabold mt-[150px] mb-10">
+            <div className="md:py-20 px-16 md:px-78">
+                <h2 className="text-[#009D66] text-5xl md:text-6xl font-extrabold md:mt-37.5 mt-80 mb-10">
                 ABOUT
                 </h2>
 
-           `` <div className="text-white text-lg md:text-2xl mt-[5px] max-w-2xl leading-relaxed space-y-8">
+            <div className="text-white text-lg md:text-2xl mt-[5px] md:min-w-4/6 w-[480px] max-w-2xl leading-relaxed space-y-8">
                 <p>
                     Frontend Developer who specializes in modern JavaScript
                     and React.js, with 1+ year of experience crafting high performance, and
@@ -43,88 +46,88 @@ const AboutSection = () => {
                 </p>
             </div>
             </div>
-            <div className='flex py-32 px-6 md:px-75 justify-between mt-10'>
+            <div id='Portfolio' className='flex md:py-36 px-6 md:px-75 justify-between mt-30'>
                 <div>
-                    <img src="src/assets/Image/1.jpg" alt="" className='md:w-[900px] ' />
+                    <img src="src/assets/Image/1.jpg" alt="" className='md:w-[2300px] md:h-[250px]' />
                 </div>
-                <div className='ml-50'>
+                <div className='ml-70 -mt-7 '>
                     <div>
                         <h1 className='text-[#009D66] text-5xl font-bold mb-6'>My Skills</h1>
                         <p className='text-white text-2xl mb-10 -ml-[1px]'>Technologies I’ve been working with recently</p>
                     </div>
-                    <div className='flex gap-15'>
+                    <div className='flex gap-8'>
                         <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl h">
                         <img
                         src="src/assets/Image/css.png"
                         alt="GitHub"
-                        className="w-20 h-20"
+                        className="w-15 h-15"
                         />
                     </div>
                     <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl">
                         <img
                         src="src/assets/Image/html.png"
                         alt="GitHub"
-                        className="w-18 h-18"
+                        className="w-13 h-13"
                         />
                     </div>
                     <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
                         src="src/assets/Image/tailwindcss.png"
                         alt="GitHub"
-                        className="w-22 h-16"
+                        className="w-17 h-11"
                         />
                     </div>
                     <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
                         src="src/assets/Image/react.png"
                         alt="GitHub"
-                        className="w-18 h-18"
+                        className="w-13 h-13"
                         />
                     </div>
                     <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
                         src="src/assets/Image/vscode.png"
                         alt="GitHub"
-                        className="w-18 h-18"
+                        className="w-13 h-13"
                         />
                     </div>
                     </div>
                     {/* second div  */}
-                    <div className='mt-15'>
-                        <div className='flex gap-15'>
-                        <div className="bg-white w-25 h-25 flex items-center justify-center rounded-xl h">
+                    <div className='mt-8'>
+                        <div className='flex gap-8'>
+                        <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl h">
                         <img
                         src="src/assets/Image/2.png"
                         alt="GitHub"
-                        className="w-18 h-18"
+                        className="w-13 h-13"
                         />
                     </div>
-                    <div className="bg-[#009D66] w-25 h-25 flex items-center justify-center rounded-xl">
+                    <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl">
                         <img
                         src="src/assets/Image/REDUX.png"
                         alt="GitHub"
-                        className="w-18 h-18"
+                        className="w-13 h-13"
                         />
                     </div>
-                    <div className="bg-white w-25 h-25 flex items-center justify-center rounded-xl ">
+                    <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
                         src="src/assets/Image/saas.png"
                         alt="GitHub"
-                        className="w-22 h-16"
+                        className="w-17 h-11"
                         />
                     </div>
-                    <div className="bg-[#009D66] w-25 h-25 flex items-center justify-center rounded-xl ">
+                    <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
                         src="src/assets/Image/github.png"
                         alt="GitHub"
-                        className="w-18 h-18"
+                        className="w-13 h-13"
                         />
                     </div>
-                    <div className="bg-white w-25 h-25 flex items-center justify-center rounded-xl ">
+                    <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl ">
                         <img
                         src="src/assets/Image/js.png"
                         alt="GitHub"
-                        className="w-35 h-18"
+                        className="w-40 h-13"
                         />
                     </div>
                     </div>
@@ -135,8 +138,8 @@ const AboutSection = () => {
 
         {/* projects */}
         <div className='py-1 px-6 md:px-78'>
-            <h2 className='text-[#009D66] text-7xl font-bold mb-3'>Selected Projects</h2>
-            <p className='text-white text-4xl mb-10 -ml-[1px]'>Some things I’ve worked on so far</p>
+            <h2 className='text-[#009D66] text-5xl font-bold mb-3'>Selected Projects</h2>
+            <p className='text-white text-2xl mb-10 -ml-[1px]'>Some things I’ve worked on so far</p>
             <div><ProjectCard /></div>
         </div>
         </section>

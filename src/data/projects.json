@@ -1,13 +1,15 @@
 
+
+
 {
     "projects": [
       {
         "id": 1,
-        "image": "/images/frontend.jpg",
+        "image": "/image/hm.jpg",
         "img": "/images/yellowball.jng",
         "title": "PLIT LEARN",
         "sub": "(Educational Website)",
-        "description": "You will learn how to create visually appealing and highly interactive websites by mastering HTML5 and CSS3 for styling, JavaScript for adding interactivity and dynamic content, and popular frameworks like React, Angular, or Vue.js for building complex web applications."
+        "description": "A full-stack educational website for Plit Learn using React.js, Tailwind CSS, and a Python backend to showcase courses and key info. Improved user engagement by 20% in 3 months and boosted seamless payments by 60% with a custom payment API."
       },
       {
         "id": 2,

@@ -10,7 +10,8 @@ const HeroSection = () => {
     return(
         
         <section
-  className="min-h-screen bg-cover bg-center bg-no-repeat w-full outline outline-red-500"
+  className="min-h-screen bg-cover bg-center bg-no-repeat w-full 
+"
   style={{ backgroundImage: `url(${bgImage})` }}
 >
 
@@ -20,20 +21,21 @@ const HeroSection = () => {
     whileInView="show"
     transition={{ staggerChildren: 1.5 }}
     viewport={{ once: true }}
-    className="flex flex-col justify-center items-start  px- md:px-78 md:w-[px] pt-32 md:pt-50"
+    className="flex flex-col justify-center md:items-start  px-30 md:px-78 md:w-[px] pt-90 md:pt-55"
   >
     <motion.h1
       variants={fadeUp}
       transition={{ duration: 0.8, delay: 0.5 }}
-      className="md:text-[90px] text-[#009D66] -ml-6 md:text-left font-bold -mb-8"
-    >
+      className="md:text-[90px]
+      text-5xl text-[#009D66] -ml-7 md:text-left font-bold md:-mb-5"
+    > 
       Hello.
     </motion.h1>
 
     <motion.p
       variants={fadeUp}
       transition={{ duration: 0.8, delay: 0.5 }}
-      className="text-[1em] text-white font-extrabold md:text-left -ml-8 leading-[90%] md:text-[150px] font- md:w-[px]"
+      className="text-8xl text-white font-extrabold md:text-left -ml-8 leading-[90%] md:text-[150px] md:w-[900px] w-[350px]"
     >
       I’m a web Developer
     </motion.p>
@@ -41,12 +43,12 @@ const HeroSection = () => {
     <motion.p
       variants={fadeUp}
       transition={{ duration: 0.8, delay: 0.5 }}
-      className="md:text-[60px] text-5xl -ml-5 mt-10 text-[#009D66] font-semi-bold leading-tight"
+      className="md:text-[60px] text-4xl -ml-7 mt-10 text-[#009D66] font-semibold leading-tight"
     >
       I build things for the web
     </motion.p>
 
-    <div className="flex items-center -ml-4 gap-60 mt-30">
+    <div className="flex items-center -ml-6 md:gap-60 gap-30 mt-20 md:mt-30">
       <motion.button
         variants={fadeUp}
         transition={{ duration: 0.8, delay: 0.5 }}
@@ -56,7 +58,7 @@ const HeroSection = () => {
           href="/POPOOLA OLUWAGBEMIGA.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black  px-10 py-3  text-3xl font-bold"
+          className="text-black  px-10 py-3 text-center  text-3xl font-bold"
         >
           Resume
         </a>

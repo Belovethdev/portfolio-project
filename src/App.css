@@ -1,7 +1,4 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: black; /* or the same bg as your bottom section */
+.fade-left {
+  mask-image: linear-gradient(to right, transparent, black);
+  -webkit-mask-image: linear-gradient(to right, transparent, black);
 }
