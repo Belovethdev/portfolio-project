@@ -34,11 +34,11 @@ function Navbar() {
 
   return (
     <nav
-      className={`w-full sm:h-[120px] h-[80px] px-[10px] md:px-25 py:2 md:py-5 bg-black opacity-70 z-50 ${
-        isFixed ? 'fixed top-0 left-0' : 'absolute top-0 left-0 px-[15px] md:px-25 py-2 md:py-5'
+      className={`md:w[1440px] md:h-[120px] h-[80px] px-[5px] md:px-25 py:2 md:py-5 bg-black opacity-70 z-50 ${
+        isFixed ? 'fixed top-0 left-0' : 'absolute top-0 left-0 px-[5px] md:px-25 py-2 md:py-5'
       }`}
     >
-      <div className="md:px-50 px-20 py-3 md:py-4 flex justify-between items-center">
+      <div className="md:px-50 px-10 py-2 md:py-4 flex justify-between items-center">
         {/* Logo */}
         <img
           src="/Image/logo.png"

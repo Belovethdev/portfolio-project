@@ -13,7 +13,7 @@ const AboutSection = () => {
   id="About"
   className="min-h-[2400px] bg-cover bg-no-repeat w-full
     bg-[url('/Image/background3.jpg')]
-    md:bg-[url('/Image/background.jpg')]
+    md:bg-[url('/images/background.jpg')]
   "
   style={{ backgroundPosition: 'center top' }}
 >
@@ -46,11 +46,11 @@ const AboutSection = () => {
                 </p>
             </div>
             </div>
-            <div id='Portfolio' className='flex md:py-36 px-6 md:px-75 justify-between mt-30'>
+            <div id='Portfolio' className='flex md:py-36 px-6 md:px-85 justify-between mt-30'>
                 <div>
-                    <img src="/Image/1.jpg" alt="" className='md:w-[2300px] md:h-[250px]' />
+                    <img src="/images/workstation.jpg" alt="" className='md:w-[2300px] md:h-[365px] rounded' />
                 </div>
-                <div className='ml-70 -mt-7 '>
+                <div className='ml-20 mt-[2px] '>
                     <div>
                         <h1 className='text-[#009D66] text-5xl font-bold mb-6'>My Skills</h1>
                         <p className='text-white text-2xl mb-10 -ml-[1px]'>Technologies I’ve been working with recently</p>

@@ -18,9 +18,9 @@ const FooterSection = () => {
     // };
     return (
         <div id='Contact'
-        className="h-[] bg-cover bg-center bg-no-repeat w-full md:h-[900px] md:py- px-6 md:px-78"
+        className="h-[] bg-cover bg-center bg-no-repeat w-full md:h-[950px] md:py- px-6 md:px-78"
           style={{ backgroundImage: `url(${bgmage})` }}>
-            <div className='h-[600px] w-[1500px] absolute top-900 bg-[#0a0a0a] border-1 rounded-2xl max-w-7xl py-10 px mt-5 grid md:grid-cols-2 gap-30 items-start'>
+            <div className='h-[600px] w-[1300px] absolute top-900 bg-[#0a0a0a] rounded-2xl py-10 px- mt-5 grid md:grid-cols-2 gap-30 items-start'>
                 <div className='w-[550px] mt-4 px-6 ml-5 rounded-2xl'>
                     <h2 className='text-white text-3xl font-semibold '>Let's Discuss</h2>
                     <p className='text-white text-3xl font-semibold'>Something <span className='text-[#009D66]'>Innovative</span> Together</p>
@@ -94,7 +94,7 @@ const FooterSection = () => {
                 <div>
                     <div className="space-y-4 w-[550px]">
                         <div className='flex gap-2'><h3 className="text-[20px] text-white font-semibold ml-2">
-                          I’ve got what you need <span className="text-green-400  font-bold text-[28px] mt-1">Lets talk</span> </h3>
+                          I’ve got what you need <span className="text-[#009D66]  font-bold text-[28px] mt-1">Lets talk</span> </h3>
                          
                         </div>
                      <form className="space-y-4">

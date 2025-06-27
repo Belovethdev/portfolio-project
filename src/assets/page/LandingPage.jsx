@@ -6,7 +6,7 @@ import AboutSection from "../component/AboutSection";
 function LandingPage() {
   return (
     <>
-      <div className="min-w-[1920px] min-h-screen flex flex-col overflow-x-hidden bg-b">
+      <div className="w-[375px] md:w-full min-h-screen flex flex-col overflow-x-hidden bg-b">
         <HeroSection />
         <AboutSection />
         {/* <FooterSection /> */}
