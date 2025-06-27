@@ -9,11 +9,11 @@ export default function ProjectCard({ projects }) {
   }
 
   return (
-    <div className="grid md:grid-cols-4 gap-5 md:w-[1250px] md:h-[450.31px] rounded-[8px]">
+    <div className="grid md:grid-cols-4 gap-5 md:w-[1250px] w-[356px h-[506.31px]] md:h-[450.31px]">
       {safeProjects.map((project) => (
         <motion.div
           key={project.id}
-          className="bg-g border-2 border-green-800 rounded-[12px] overflow-hidden"
+          className="bg-g border-1 border-[#009D66] rounded-[px] overflow-hidden"
         //   whileHover={{ scale: 1.05 }}
         >
           <div className="backdrop-opacity-50">
@@ -33,6 +33,3 @@ export default function ProjectCard({ projects }) {
     </div>
   );
 }
-
-{/* <h1 className='absolute top-886 left-1/2 transform -ml-36 -translate-x-1/ -translate-y-1/2 text-[6vw] leading-[120px] font-extrabold text-white opacity-7 z-0 pointer-events-non select-n'>beloveth </h1>
-                <h1 className='absolute top-910 left-96 transform text-center ml-40 -translate-x-1/ -translate-y-1/2 text-[21vw] leading-[120px] font-extrabold text-white opacity-7 z-0 pointer-events-none select-none'> <span className=''>dev</span></h1> */}

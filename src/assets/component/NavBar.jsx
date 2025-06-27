@@ -34,16 +34,16 @@ function Navbar() {
 
   return (
     <nav
-      className={`md:w[1440px] md:h-[120px] h-[80px] px-[5px] md:px-25 py:2 md:py-5 bg-black opacity-70 z-50 ${
+      className={`md-full md:h-[120px] w-[100%] h-[80px] px-[5px] md:px-25 py-6 md:py-5 bg-red-600 opacity- z-50 ${
         isFixed ? 'fixed top-0 left-0' : 'absolute top-0 left-0 px-[5px] md:px-25 py-2 md:py-5'
       }`}
     >
-      <div className="md:px-50 px-10 py-2 md:py-4 flex justify-between items-center">
+      <div className="md:px-50 px-10 py-2 md:py-4 flex md:justify-between gap-50 md:gap-45 items-center">
         {/* Logo */}
         <img
           src="/Image/logo.png"
           alt="Logo"
-          className="md:w-[200px] md:h-[50px] w-[150px] h-[40px] cursor-pointer"
+          className="md:w-[200px] md:h-[50px] w-[80px] h-[25px] cursor-pointer"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
             setMenuOpen(false);
@@ -59,7 +59,7 @@ function Navbar() {
         </ul>
 
         {/* Mobile Menu Toggle */}
-        <div className="md:hidden" ref={toggleRef}>
+        <div className="md:hidden " ref={toggleRef}>
           {menuOpen ? (
             <button onClick={() => setMenuOpen(false)} className="text-white z-50 relative">
               <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,14 +79,14 @@ function Navbar() {
       {/* Slide-in Menu from Right */}
       <div
         ref={menuRef}
-        className={`fixed top-0 right-0 h-100 w-[250px] bg-black text-white transform transition-transform duration-300 z-40 md:hidden ${
-          menuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed top-0 right-0 pt-5  w-[150px] bg-bla bg-opacity-50 text-white transform transition-transform duration-500 z-40 md:hidden ${
+          menuOpen ? '-translate-x-0' : 'translate-x-full'
         }`}
       >
-        <ul className="flex flex-col mt-28 ml-6 gap-10 text-lg font-semibold">
+        <ul className="flex flex-col mt-10 ml-8 gap-5 text-lg font-semibold">
           <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
           <li><a href="#About" onClick={() => setMenuOpen(false)}>About</a></li>
-          <li><a href="#Portfolio" onClick={() => setMenuOpen(false)}>Portfolio</a></li>
+          <li><a href="#Portfolio" onClick={() => setMenuOpen(false)} className='hover:text-' >Portfolio</a></li>
           <li><a href="#Contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
         </ul>
       </div>

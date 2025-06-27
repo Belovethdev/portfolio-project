@@ -11,20 +11,20 @@ const AboutSection = () => {
     return (
         <section
   id="About"
-  className="min-h-[2400px] bg-cover bg-no-repeat w-full
-    bg-[url('/Image/background3.jpg')]
+  className="min-h-[1500px] h-[2000px] bg-cover bg-center bg-no-repeat w-full
+    bg-[url('/images/mobile.jpg')]
     md:bg-[url('/images/background.jpg')]
   "
   style={{ backgroundPosition: 'center top' }}
 >
 
 
-            <div className="md:py-20 px-16 md:px-78">
-                <h2 className="text-[#009D66] text-5xl md:text-6xl font-extrabold md:mt-37.5 mt-80 mb-10">
+            <div className="md:py-20 px-12 md:px-78">
+                <h2 className="text-[#009D66] text-3xl md:text-6xl font-extrabold md:mt-37.5 mt-30 mb-8 md:mb-10">
                 ABOUT
                 </h2>
 
-            <div className="text-white text-lg md:text-2xl mt-[5px] md:min-w-4/6 w-[480px] max-w-2xl leading-relaxed space-y-8">
+            <div className="text-white text-[14px] md:text-2xl md:mt-[5px]  md:min-w-4/6 w-[280px] max-w-2xl leading-[150%] space-y-8">
                 <p>
                     Frontend Developer who specializes in modern JavaScript
                     and React.js, with 1+ year of experience crafting high performance, and
@@ -46,100 +46,103 @@ const AboutSection = () => {
                 </p>
             </div>
             </div>
-            <div id='Portfolio' className='flex md:py-36 px-6 md:px-85 justify-between mt-30'>
+            <div id='Portfolio' className='flex flex-col md:flex-row md:py-36 px-12 md:px-85 justify-between py-6 mt-30'>
                 <div>
-                    <img src="/images/workstation.jpg" alt="" className='md:w-[2300px] md:h-[365px] rounded' />
+                    <img src="/images/workstation.jpg" alt="" className='md:w-[2300px] md:h-[365px] w-[312px] h-[186px] rounded' />
                 </div>
-                <div className='ml-20 mt-[2px] '>
+                <div className='md:ml-20 md:mt-[2px] mt-5'>
                     <div>
-                        <h1 className='text-[#009D66] text-5xl font-bold mb-6'>My Skills</h1>
-                        <p className='text-white text-2xl mb-10 -ml-[1px]'>Technologies I’ve been working with recently</p>
+                        <h1 className='text-[#009D66] md:text-5xl text-[32px] font-bold mb-2 md:mb-6'>My Skills</h1>
+                        <p className='text-white text-[16px] md:text-2xl md:mb-10 mb-8 -ml-[1px]'>Technologies I’ve been working with recently</p>
                     </div>
-                    <div className='flex gap-8'>
-                        <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl h">
+
+                    <div className='md:flex grid grid-cols-4 gap-2'>
+                        <div className="bg-[#009D66] md:w-20 md:h-20 w-15 h-15 flex items-center justify-center rounded-[px]">
                         <img
                         src="/Image/css.png"
                         alt="GitHub"
-                        className="w-15 h-15"
+                        className="md:w-15 md:h-15 w-11 h-11 "
                         />
                     </div>
-                    <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl">
+                    <div className="bg-white md:w-20 md:h-20 w-15 h-15 flex items-center justify-center rounded-[px]">
                         <img
                         src="/Image/html.png"
                         alt="GitHub"
-                        className="w-13 h-13"
+                        className="md:w-13 md:h-13 w-11 h-11"
                         />
                     </div>
-                    <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl ">
+                    <div className="bg-[#009D66] md:w-20 md:h-20 w-15 h-15 flex items-center justify-center rounded-[] ">
                         <img
                         src="/Image/tailwindcss.png"
                         alt="GitHub"
-                        className="w-17 h-11"
+                        className="md:w-17 md:h-11 w-13 h-7"
                         />
                     </div>
-                    <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl ">
+                    <div className="bg-white md:w-20 md:h-20 w-15 h-15 flex items-center justify-center rounded-[] ">
                         <img
                         src="/Image/react.png"
                         alt="GitHub"
-                        className="w-13 h-13"
+                        className="md:w-13 md:h-13 w-10 h-9"
                         />
                     </div>
-                    <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl ">
+                    <div className="bg-[#009D66] md:w-20 md:h-20 w-15 h-15 flex items-center justify-center rounded-[] ">
                         <img
                         src="/Image/vscode.png"
                         alt="GitHub"
-                        className="w-13 h-13"
+                        className="md:w-13 md:h-13 h-9 w-9"
                         />
                     </div>
-                    </div>
+                    
                     {/* second div  */}
-                    <div className='mt-8'>
-                        <div className='flex gap-8'>
-                        <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl h">
+                    {/* <div className='mt-8'> */}
+                        {/* <div className='flex gap-8'> */}
+                        <div className="bg-white md:w-20 md:h-20 w-15 h-15 flex items-center justify-center rounded-[px]">
                         <img
                         src="/Image/2.png"
                         alt="GitHub"
-                        className="w-13 h-13"
+                        className="md:w-13 md:h-13 w-8 h-9"
                         />
                     </div>
-                    <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl">
+                    <div className="bg-[#009D66] md:w-20 md:h-20 w-15 h-15 flex items-center justify-center rounded-[px]">
                         <img
                         src="/Image/REDUX.png"
                         alt="GitHub"
-                        className="w-13 h-13"
+                        className="md:w-13 md:h-13 w-8 h-9"
                         />
                     </div>
-                    <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl ">
+                    <div className="bg-white md:w-20 md:h-20 w-15 h-15flex items-center justify-center rounded-[px]">
                         <img
                         src="/Image/saas.png"
                         alt="GitHub"
-                        className="w-17 h-11"
+                        // changes
+                        className="md:w-17 md:h-11 w-14 h-11 mx-1 mt-2"
                         />
                     </div>
-                    <div className="bg-[#009D66] w-20 h-20 flex items-center justify-center rounded-xl ">
+                    <div className="bg-[#009D66] md:w-20 md:h-20 w-15 h-15 flex items-center justify-center rounded-[px]">
                         <img
                         src="/Image/github.png"
                         alt="GitHub"
-                        className="w-13 h-13"
+                        className="md:w-13 md:h-13 w-8 h-8"
                         />
                     </div>
-                    <div className="bg-white w-20 h-20 flex items-center justify-center rounded-xl ">
+                    <div className="bg-white md:w-20 md:h-20 w-15 h-15 flex items-center justify-center rounded-[px]">
                         <img
                         src="/Image/js.png"
                         alt="GitHub"
-                        className="w-40 h-13"
+                        className="md:w-40 md:h-13 w-30 h-10"
                         />
                     </div>
-                    </div>
+                    {/* </div> */}
+                    {/* </div> */}
                     </div>
                     
                 </div>
             </div>
 
         {/* projects */}
-        <div className='py-1 px-6 md:px-78'>
-            <h2 className='text-[#009D66] text-5xl font-bold mb-3'>Selected Projects</h2>
-            <p className='text-white text-2xl mb-10 -ml-[1px]'>Some things I’ve worked on so far</p>
+        <div className='py-1 px-12 md:px-78'>
+            <h2 className='text-[#009D66] text-[32px] md:text-5xl font-bold mb-1 md:mb-3'>Selected Projects</h2>
+            <p className='text-white text-[16px] md:text-2xl mb-5 md:mb-10 -ml-[1px]'>Some things I’ve worked on so far</p>
             <div><ProjectCard /></div>
         </div>
         </section>

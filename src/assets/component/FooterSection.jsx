@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion';
 import { div } from 'framer-motion/client';
-import bgmage from '/Image/Bcc 2.jpg';
+import bgmage from '/images/Bcc 2.jpg';
 import React, { useState, useEffect } from 'react';
 
 const FooterSection = () => {
@@ -18,18 +18,21 @@ const FooterSection = () => {
     // };
     return (
         <div id='Contact'
-        className="h-[] bg-cover bg-center bg-no-repeat w-full md:h-[950px] md:py- px-6 md:px-78"
-          style={{ backgroundImage: `url(${bgmage})` }}>
-            <div className='h-[600px] w-[1300px] absolute top-900 bg-[#0a0a0a] rounded-2xl py-10 px- mt-5 grid md:grid-cols-2 gap-30 items-start'>
-                <div className='w-[550px] mt-4 px-6 ml-5 rounded-2xl'>
-                    <h2 className='text-white text-3xl font-semibold '>Let's Discuss</h2>
-                    <p className='text-white text-3xl font-semibold'>Something <span className='text-[#009D66]'>Innovative</span> Together</p>
-                    <p className='text-white mt-10 mb-3 text-[15px] font-bold'>I'm interested in...</p>
-                    <div className="flex flex-wrap gap-3 mb-6">
+        className="h-[1500px] bg-cover bg-center bg-no-repeat w-full md:h-[950px] md:py- px-10 md:px-78
+    //     bg-[url('/images/Bcc 2.jpg')]
+    // md:bg-[url('/images/mobile.jpg')]"
+          style={{ backgroundImage: `url(${bgmage})` }}
+          >
+            <div className='md:h-[600px] md:w-[1300px] w-[350px] h-[1350px] absolute top-660 md:top-900  rounded-2xl py-10 mt-5 grid md:grid-cols-2 md:gap-30 items-start'>
+                <div className='md:w-[550px] w-[px] mt-4 ml-5 rounded-2xl'>
+                    <h2 className='text-white w-[400px] flex items-center  text-[29px] font-semibold '>Let's Discuss Something</h2>
+                    <p className='text-white text-[30px] font-semibold'> <span className='text-[#009D66]'>Innovative</span> Together</p>
+                    <p className='text-white mt-10 mb-3 text-[20px] font-semibold'>I'm interested in...</p>
+                    <div className="flex flex-wrap md:gap-3 gap-4 mb-6">
                      {[
                        "Ecommerce Website",
-                       "Saas Website",
                        "Portfolio",
+                       "Saas Website",
                        "Landing Page",
                        "Movie Website",
                        "Blog Website",
@@ -51,14 +54,14 @@ const FooterSection = () => {
                             <div className='w-6 h-6 bg-[#009D66] rounded-full flex items-center justify-center'>
                             <img src="/Image/call icon.png" alt="" className='w-4 h-4' />
                            </div>
-                           <p className='text-white'> +234 705 725 3514</p>
+                           <p className='text-white text-[16px]'> +234 705 725 3514</p>
                         </div>
-                        <div className='flex items-center gap-3'>
-                            <div className='w-6 h-6 bg-[#009D66] rounded-full flex items-center justify-center'>
+                        <div className='flex md:flex-row flex-col md:items-center gap-3'>
+                            <div className='flex gap-4'><div className='w-6 h-6 bg-[#009D66] rounded-full flex items-center justify-center'>
                             <img src="/Image/email icon.png" alt="" className='w-4 h-3' />
                            </div>
-                           <p className='text-white'> hello.oluwagbemiga@gmail.com</p>
-                           <div className='flex gap-3 ml-30'> 
+                           <p className='text-white text-[16px]'> hello.oluwagbemiga@gmail.com</p></div>
+                           <div className='flex gap-6 mt-5 md:ml-30'> 
                              <a
                               href="https://www.linkedin.com/in/oluwagbemigapopoola"
                               target="_blank"
@@ -91,49 +94,46 @@ const FooterSection = () => {
                     </div>
                 </div>
                 {/* right */}
-                <div>
-                    <div className="space-y-4 w-[550px]">
-                        <div className='flex gap-2'><h3 className="text-[20px] text-white font-semibold ml-2">
-                          I’ve got what you need <span className="text-[#009D66]  font-bold text-[28px] mt-1">Lets talk</span> </h3>
+                
+                    <div className=" space-y-4 w-[300px] md:w-[550px] px-7">
+                        <div className='flex gap'><h3 className="text-[18px] text-white w-[200px] font-semibold ml-2">
+                          I’ve got what you need <span className="text-[#009D66]  font-bold text-[25px] mt-">Lets talk</span> </h3>
                          
                         </div>
                      <form className="space-y-4">
                      <input
                        type="text"
                        placeholder="Your name"
-                       className="w-[430px] bg-white text-black px-4 py-5 border-2 border-gren-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
+                       className="w-[298px] md:w-[430px] bg-white text-black px-4 py-5 border-2 border-gren-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
                       />
                      <input
                       type="email"
                       placeholder="Your email"
-                      className="w-[430px] bg-white text-black px-4 py-5 border-2 border-gren-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
+                      className="w-[298px] md:w-[430px] bg-white text-black px-4 py-5 border-2 border-gren-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
                       />
                      <textarea
                      rows="4"
                      placeholder="Your message"
-                     className="w-[430px] h-[170px] bg-white text-black px-4 py-2 border-2 border-gren-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800  rounded"
+                     className="w-[298px] md:w-[430px] h-[170px] bg-white text-black px-4 py-2 border-2 border-gren-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800  rounded"
                      />
                      <button
                        type="submit"
-                       className="w-[430px] bg-[#009D66] hover:bg-green-600 text-black py-2 rounded font-semibold"
+                       className="w-[298px] md:w-[430px] bg-[#009D66] hover:bg-green-600 text-black py-2 rounded font-semibold"
                        >
                        Submit
                      </button>
                      </form>
-                     <div id='home' className="bg-[] w-8 h-8 flex absolute bottom-27.5 right-6 items-center justify-center rounded-xl hover:bg-green-950">
+                     <div id='home' className="flex-col gap w-8 h-8 flex absolute md:mt-[0px] mt-10 md:bottom-27.5 right-39 md:right-6 items-center justify-center rounded-xl hover:bg-green-950">
                              <img
                               src="/Image/arrow.png"
                               alt="GitHub"
                               className="w-12 h-8"
                               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                              />
+                             {/* <p className="text-[14px] leading-[24px] text-white tracking-normal font-[355px] w-[400px] mt-20 h-[24px] text-center">© 2025 BelovethDev. All rights reserved.</p> */}
                              </div>
+                             <p className="text-[12px] absolute  leading-[24px] text-[#AEAEAE] tracking-normal font-[355] w-[300px] mt-40 x] text-center ">© 2025 BelovethDev. All rights reserved.</p>
                     </div>
-                </div>
-                
-            </div>
-            <div className='relative'>
-                
             </div>
         </div>
     )
