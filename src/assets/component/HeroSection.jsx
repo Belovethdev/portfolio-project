@@ -1,118 +1,116 @@
 import { motion } from 'framer-motion';
-import bgImage from '/Image/background12.jpg';
 
+const slideRight = {
+  hidden: { opacity: 0, x: 100 },
+  show: { opacity: 1, x: 0 },
+};
+
+const slideUp = {
+  hidden: { opacity: 0, y: 100 },
+  show: { opacity: 1, y: 0 },
+};
 
 const HeroSection = () => {
-    const slideRight = {
-        hidden: { opacity: 0,y: 40 },
-        show: {  opacity: 1,y: 0},
-    };
-    return(
-        
-        <section
-  className="min-h-[650px] bg-cover bg-center bg-no-repeat w-full 
-  bg-[url('/images/background2.jpg')]
-    md:bg-[url('/images/back.jpg')]
-"
-  // style={{ backgroundImage: "url('images/back.jpg" }}
->
+  return (
+    <section className="relative md:px-50 w-full min-h-screen overflow-hidden">
+      {/* Mobile Background */}
+      <div className="absolute inset-0 md:hidden bg-[url('/images/background2.jpg')] bg-cover bg-center bg-no-repeat" />
 
-  <motion.div
-    id="home"
-    initial="hidden"
-    whileInView="show"
-    transition={{ staggerChildren: 2.5 }}
-    viewport={{ once: true }}
-    className="flex flex-col justify-center md:items-start  px-16 md:px-78 md:w-[px] pt-40 md:pt-55"
-  >
-    <motion.h1
-      variants={slideRight}
-      transition={{ duration: 0.8, delay: 0.5 }}
-      className="md:text-[90px]
-      text-3xl md:text-5xl text-[#009D66] -ml-7 text-left font-bold md:-mb-5"
-    > 
-      Hello.
-    </motion.h1>
+      {/* Desktop Background */}
+      <div className="absolute inset-0 hidden md:block  bg-[url('/images/back.jpg')] bg-cover bg-center bg-no-repeat" />
 
-    <motion.p
-      variants={slideRight}
-      transition={{ duration: 0.8, delay: 0.5 }}
-      className="text-[40px] text-white font-bold md:text-left mt-2 -ml-7 leading-[130%] md:text-[150px] md:w-[900px] w-[300px]"
-    >
-      I build things for the web
-    </motion.p>
-    
-    {/* <motion.p
-      variants={fadeUp}
-      transition={{ duration: 0.8, delay: 0.5 }}
-      className="md:text-[60px] text-[16px] -ml-7 md:mt-10 mt-8 text-[#009D66] font-semibold leading-tight"
-    >
-      I build things for the web
-    </motion.p> */}
-    <motion.p
-      variants={slideRight}
-      transition={{ duration: 0.8, delay: 0.9 }}
-      className="md:text-[60px] w-[280px] text-[14px] -ml-7 md:mt-10 mt-8 text-white font-light leading-[150%]"
-    >
-       A developer who loves solving real-world problems through clean, efficient code, building fast, responsive, and user-focused websites with a strong eye for structure, accessibility, and performance. My goal is to create digital experiences that are both useful and enjoyable.
-    </motion.p>
-   
-
-    <div className="flex md:items-center bg-red- md:flex-row -ml-6 md:gap-60 gap-25 mt-20 md:mt-30">
-      <motion.button
-        variants={slideRight}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        className='h-9 md:h-8 bg-[#009D66] w-[80px] flex items-center rounded hover:bg-green-800'
-      >
-        <a
-          href="/POPOOLA OLUWAGBEMIGA.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-black  px-8 py-3 text-left mb-1 -ml-5 text-[16px] md:text-3xl font-bold"
-        >
-          Resume
-        </a>
-      </motion.button>
-
+      {/* Content */}
       <motion.div
-        variants={slideRight}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        className="flex gap-4"
+        id="home"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.5 }}
+        variants={{
+          show: {
+            transition: {
+              staggerChildren: 0.4,
+            },
+          },
+        }}
+        className="relative z-10 flex flex-col justify-center md:items-start w-full h-screen px-12 md:px-[78px] pt-40 md:pt-[220px]"
       >
-        <a
-          href="https://www.linkedin.com/in/oluwagbemigapopoola"
-          target="_blank"
-          rel="noopener noreferrer"
+        {/* Heading */}
+        <motion.h1
+          variants={slideRight}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+          className="text-3xl md:text-[90px] text-[#009D66] text-left font-bold mb- md:mb-0"
         >
-          <div className="bg-[#009D66] md:w-12 w-9 md:h-12 h-9 flex items-center justify-center rounded hover:bg-green-800">
-            <img
-              src="/Image/linkedin.png"
-              alt="LinkedIn"
-              className="w-5 h-5 md:w-8 md:h-8"
-            />
-          </div>
-        </a>
+          Hello.
+        </motion.h1>
 
-        <a
-          href="https://github.com/Belovethdev"
-          target="_blank"
-          rel="noopener noreferrer"
+        {/* Subheading */}
+        <motion.p
+          variants={slideRight}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+          className="text-[40px] md:text-[64px] text-white font-bold text-left mt-2 leading-tight w-full max-w-[900px]"
         >
-          <div className="bg-[#009D66] md:w-12 w-9 md:h-12 h-9 flex items-center justify-center rounded hover:bg-green-800">
-            <img
-              src="/Image/github.png"
-              alt="GitHub"
-              className="w-5 h-5 md:w-8 md:h-8"
-            />
+          I build things for the web
+        </motion.p>
+
+        {/* Description */}
+        <motion.p
+          variants={slideRight}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+          className="md:text-[20px] text-[14px] mt-8 md:mt-10 text-white font-light leading-relaxed w-full max-w-[600px]"
+        >
+          A developer who loves solving real-world problems through clean, efficient code, building fast, responsive, and user-focused websites with a strong eye for structure, accessibility, and performance.
+        </motion.p>
+
+        {/* Resume + Social Links */}
+        <motion.div
+          variants={slideUp}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+          className="flex flex-row items-start md:items-center gap-10 md:gap-20 mt-10 md:mt-16"
+        >
+          <button className="h-9.5 bg-[#009D66] rounded hover:bg-green-800 px-6">
+            <a
+              href="/POPOOLA OLUWAGBEMIGA.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black text-xl md:text-3xl font-bold"
+            >
+              Resume
+            </a>
+          </button>
+
+          <div className="flex gap-4">
+            <a
+              href="https://www.linkedin.com/in/oluwagbemigapopoola"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="bg-[#009D66] w-9 md:w-12 h-9 md:h-12 flex items-center justify-center rounded hover:bg-green-800">
+                <img
+                  src="/Image/linkedin.png"
+                  alt="LinkedIn"
+                  className="w-5 h-5 md:w-8 md:h-8"
+                />
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/Belovethdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="bg-[#009D66] w-9 md:w-12 h-9 md:h-12 flex items-center justify-center rounded hover:bg-green-800">
+                <img
+                  src="/Image/github.png"
+                  alt="GitHub"
+                  className="w-5 h-5 md:w-8 md:h-8"
+                />
+              </div>
+            </a>
           </div>
-        </a>
+        </motion.div>
       </motion.div>
-    </div>
-  </motion.div>
-</section>
+    </section>
+  );
+};
 
-        
-        
-    )
-}
 export default HeroSection;

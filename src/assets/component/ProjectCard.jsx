@@ -9,27 +9,31 @@ export default function ProjectCard({ projects }) {
   }
 
   return (
-    <div className="grid md:grid-cols-4 gap-5 md:w-[1250px] w-[356px h-[506.31px]] md:h-[450.31px]">
+    <>
+    <div className='py-10 md:px-78'>
+            <h2 className='text-[#009D66] md:w-[] w-[400px] text-[32px] md:text-5xl font-bold mb-1 md:mb-3'>Selected Projects</h2>
+            <p className='text-white text-[16px] md:text-2xl mb-5 md:mb-10 -ml-[1px]'>Some things I’ve worked on so far</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:flex md:justify-between gap-5 w-full">
       {safeProjects.map((project) => (
         <motion.div
           key={project.id}
-          className="bg-g border-1 border-[#009D66] rounded-[px] overflow-hidden"
-        //   whileHover={{ scale: 1.05 }}
+          className="border border-[#009D66] bg-[#0a0a0a] rounded overflow-hidden flex flex-col "
         >
-          <div className="backdrop-opacity-50">
-            <img
+          <img
             src={project.image}
             alt={project.title}
-            className="w-full h-48 object-cover"
+            className="w-full h-1/2 object-cover"
           />
-          <div className="p-4 text-white">
-            <p className="font-bold text-lg">{project.title}</p>
-            <p className="text-sm text-gray-300">{project.sub}</p>
-            <p className="mt-2 font-mediums text-[14px]">{project.description}</p>
-          </div>
+          <div className="flex-1 p-4 text-white flex flex-col">
+            <p className="font-bold text-lg mb-1">{project.title}</p>
+            <p className="text-sm text-gray-300 mb-2">{project.sub}</p>
+            <p className="text-[14px] flex-1">{project.description}</p>
           </div>
         </motion.div>
       ))}
     </div>
+        </div>
+    
+    </>
   );
 }

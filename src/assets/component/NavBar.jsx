@@ -34,7 +34,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`md-full md:h-[120px] w-[100%] h-[80px] px-[5px] md:px-25 py-6 md:py-5 bg-red-600 opacity- z-50 ${
+      className={`md-full md:h-[120px] w-full h-[80px] px-[5px] md:px-25 py-6 md:py-5 bg-black opacity- z-50 ${
         isFixed ? 'fixed top-0 left-0' : 'absolute top-0 left-0 px-[5px] md:px-25 py-2 md:py-5'
       }`}
     >

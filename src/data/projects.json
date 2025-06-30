@@ -13,24 +13,24 @@
       },
       {
         "id": 2,
-        "image": "/images/backend.jpg",
-        "title": "Backend Development",
-        "sub": "(Educational Website)",
-        "description": "Master server-side programming and database management. You'll learn server-side languages like Python, Node.js, database management with SQL and NoSQL, API development and integration, authentication and security practices."
+        "image": "/images/movie1.jpg",
+        "title": "FLICKVIEW",
+        "sub": "(Movie Website)",
+        "description": "A full-stack movie discovery platform built with React.js, Tailwind CSS, and a Python backend. Showcased trending films, detailed movie pages, and integrated third-party APIs for trailers and reviews. Enhanced user interaction by 30% through custom watchlists and real-time search functionality."
         },
       {
         "id": 3,
-        "image": "/images/uiux.jpg",
-        "title": "UI/UX Design",
-        "sub": "(Educational Website)",
-        "description": "In the UI/UX Design course, you will learn to design user interfaces that are both functional and aesthetically pleasing by understanding user-centered design principles, creating wireframes, prototypes to test usability, using design tools like Figma, FigJam, and Miro."
+        "image": "/images/job2.jpg",
+        "title": "HIRE NOW",
+        "sub": "(Job Listing Website)",
+        "description": "A job listing web application built using React.js, Tailwind CSS, and Flask. Included advanced job filtering, resume uploads, and employer management tools. Improved job seeker engagement by 40% and automated email alerts boosted application submissions by 60%."
         },
       {
         "id": 4,
-        "image": "/images/datascience.jpg",
-        "title": "Data Science",
-        "sub": "(Educational Website)",
-        "description": "Our Data Science course equips you with essential skills in data analysis and machine learning. Learn to collect, clean, and manipulate data using Python and SQL, and gain expertise in statistical analysis and data visualization."
+        "image": "/images/ecommerce1.jpg",
+        "title": "DIGITAZ",
+        "sub": "(E-Commerce Website)",
+        "description": "A scalable e-commerce website developed using React.js, Tailwind CSS, and Django REST Framework. Featured dynamic product listings, cart management, and secure payments. Increased user conversions by 45% and optimized checkout flow with a custom payment gateway integration.."
       }
     ]
   }
