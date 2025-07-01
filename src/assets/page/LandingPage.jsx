@@ -10,10 +10,10 @@ function LandingPage() {
     <>
       <div className="min-h-screen w-full flex flex-col overflow-x-hidden bg-black">
         <HeroSection />
-<div className="mt-"><AboutSection /></div>
-<div className="mt-"><MyskillSection /></div>
-<div><ProjectCard /></div>
-<div className="mt-"><FooterSection /></div>
+        <AboutSection />
+        <MyskillSection />
+        <ProjectCard />
+        <FooterSection />
       </div>
     </>
   );

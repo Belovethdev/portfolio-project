@@ -12,51 +12,48 @@ const slideUp = {
 
 const HeroSection = () => {
   return (
-    <section className="relative md:px-50 w-full min-h-screen overflow-hidden">
-      {/* Mobile Background */}
-      <div className="absolute inset-0 md:hidden bg-[url('/images/background2.jpg')] bg-cover bg-center bg-no-repeat" />
+<section className="relative w-full min-h-screen overflow-hidden px-4 md:px-16">
+  {/* Mobile Background */}
+  <div className="absolute inset-0 md:hidden h-[60rem] md:h-100vh w-100% bg-[url('/images/background22.jpg')] bg-cover bg-center bg-no-repeat" />
 
-      {/* Desktop Background */}
-      <div className="absolute inset-0 hidden md:block  bg-[url('/images/back.jpg')] bg-cover bg-center bg-no-repeat" />
+  {/* Desktop Background */}
+  <div className="absolute inset-0 hidden md:block bg-[url('/images/background22.jpg')] bg-cover bg-center bg-no-repeat" />
 
-      {/* Content */}
-      <motion.div
-        id="home"
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.5 }}
-        variants={{
-          show: {
-            transition: {
-              staggerChildren: 0.4,
-            },
-          },
-        }}
-        className="relative z-10 flex flex-col justify-center md:items-start w-full h-screen px-12 md:px-[78px] pt-40 md:pt-[220px]"
-      >
-        {/* Heading */}
+   {/* Horizontal Gradient Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-95" />
+
+    {/* Vertical Gradient Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-70 z-0" />
+
+  {/* Content */}
+  <motion.div
+    id="home"
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: false, amount: 0.5 }}
+    variants={{
+      show: {
+        transition: {
+          staggerChildren: 0.4,
+        },
+      },
+    }}
+    className="relative z-10 flex flex-col justify-center md:items-start md:gap-[10px] md:w-[640px] md:h-[318px] mt px-10 md:top-[200px] md:pl-[120px] pt-50"
+  >
+    {/* Heading */}
         <motion.h1
           variants={slideRight}
           transition={{ duration: 1.2, ease: 'easeOut' }}
-          className="text-3xl md:text-[90px] text-[#009D66] text-left font-bold mb- md:mb-0"
+          className="text-3xl md:text-[66px] w-[300px] md:w-[800px] text-[#009D66] text-left font-bold  md:mb-0"
         >
-          Hello.
+          Designing Experiences. Building the Future
         </motion.h1>
-
-        {/* Subheading */}
-        <motion.p
-          variants={slideRight}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
-          className="text-[40px] md:text-[64px] text-white font-bold text-left mt-2 leading-tight w-full max-w-[900px]"
-        >
-          I build things for the web
-        </motion.p>
 
         {/* Description */}
         <motion.p
           variants={slideRight}
           transition={{ duration: 1.2, ease: 'easeOut' }}
-          className="md:text-[20px] text-[14px] mt-8 md:mt-10 text-white font-light leading-relaxed w-full max-w-[600px]"
+          className="md:text-[18px] text-[14px] mt-8 md:mt-10 text-white font-semibold leading-relaxed w-full max-w-[2000px]"
         >
           A developer who loves solving real-world problems through clean, efficient code, building fast, responsive, and user-focused websites with a strong eye for structure, accessibility, and performance.
         </motion.p>
@@ -64,10 +61,10 @@ const HeroSection = () => {
         {/* Resume + Social Links */}
         <motion.div
           variants={slideUp}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
-          className="flex flex-row items-start md:items-center gap-10 md:gap-20 mt-10 md:mt-16"
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          className="flex flex-row items-start md:items-center gap-10 md:gap-40 mt-20 md:mt-16"
         >
-          <button className="h-9.5 bg-[#009D66] rounded hover:bg-green-800 px-6">
+          <button className="md:h-[50px] md:w-[161px] h-7 bg-[#009D66] rounded hover:bg-green-800 px-4">
             <a
               href="/POPOOLA OLUWAGBEMIGA.pdf"
               target="_blank"
@@ -78,13 +75,13 @@ const HeroSection = () => {
             </a>
           </button>
 
-          <div className="flex gap-4">
+          <div className="flex md:gap-8 gap-4">
             <a
               href="https://www.linkedin.com/in/oluwagbemigapopoola"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-[#009D66] w-9 md:w-12 h-9 md:h-12 flex items-center justify-center rounded hover:bg-green-800">
+              <div className="bg-[#009D66] w-7 md:w-12 h-7 md:h-12 flex items-center justify-center rounded hover:bg-green-800">
                 <img
                   src="/Image/linkedin.png"
                   alt="LinkedIn"
@@ -98,7 +95,7 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-[#009D66] w-9 md:w-12 h-9 md:h-12 flex items-center justify-center rounded hover:bg-green-800">
+              <div className="bg-[#009D66] w-7 md:w-12 h-7 md:h-12 flex items-center justify-center rounded hover:bg-green-800">
                 <img
                   src="/Image/github.png"
                   alt="GitHub"
@@ -108,9 +105,9 @@ const HeroSection = () => {
             </a>
           </div>
         </motion.div>
-      </motion.div>
-    </section>
-  );
+  </motion.div>
+</section>
+ );
 };
 
 export default HeroSection;

@@ -17,19 +17,26 @@ const AboutSection = () => {
   return (
     <motion.div
       id="About"
-      className="md:py-50 px-12 md:px-78 h-full bg-cover bg-center bg-no-repeat w-full
-      bg-[url('/images/mobile.jpg')] md:bg-[url('/images/background.jpg')]"
+      className="relative md:py-30 px-12 md:px-46 h-full bg-cover bg-center bg-no-repeat w-full
+             bg-[url('/images/mobile2.jpg')] md:bg-[url('/images/screen.jpg')]"
+      
+      
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }} // animate once when 30% visible
       variants={fadeUp}
     >
-      <h2 className="text-[#009D66] text-3xl md:text-6xl font-extrabold md:mt-37.5 md:pt-0 pt-20 md:pb-0 pb-10 mb- md:mb-10">
+        {/* Gradient overlay - only visible on md+ screens */}
+  <div className="hidden md:block absolute inset-0 pointer-events-none z-0">
+    {/* <div className="w-full h-full bg-gradient-to-r from-black via-transparent to-transparent" /> */}
+    <div className="w-full h-100 bg-gradient-to-b from-black/70 via-transparent to-transparent absolute top-0 left-0" />
+  </div>
+      <h2 className="text-[#009D66] text-3xl md:text-[32px] font-extrabold md:mt- md:pt-0 pt-20 md:pb-0 pb-10 md:mb-10">
         ABOUT
       </h2>
 
       <motion.div
-        className="text-white text-[14px]  md:text-2xl mt-10 md:mt-[5px] md:min-w-4/6 w-[280px] max-w-2xl leading-[180%] space-y-8"
+        className="text-white text-[14px]  md:text-[20px] mt- md:mt-[5px] md:min-w-4/6 w-[280px] max-w-6xl leading-[180%] space-y-8"
         variants={fadeUp}
       >
         <p>

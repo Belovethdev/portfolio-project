@@ -1,58 +1,80 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import emailjs from '@emailjs/browser'; // ✅ Import EmailJS
 
 const words = ['Innovative', 'Exciting', 'Creative', 'Brilliant', 'Cool'];
 
 const FooterSection = () => {
   const [index, setIndex] = useState(0);
+  const [done, setDone] = useState(false); // ✅ Success message
+  const form = useRef();
+    const [showSuccess, setShowSuccess] = useState(false);
 
-  // Cycle words every 3 seconds
+  // Cycle words every 3s
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % words.length);
     }, 3000);
-
     return () => clearInterval(interval);
   }, []);
 
-  // Animation variants for fade and jump up
   const wordVariants = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: -20 },
   };
-  // Variants for fade up animation
+
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1.2,
-        ease: 'easeOut',
-      },
-    },
+    show: { opacity: 1, y: 0, transition: { duration: 1.2, ease: 'easeOut' } },
   };
+
+  // ✅ ✅ ✅ The sendForm handler
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'service_sdohg7m',  // <-- change to your EmailJS Service ID
+        'template_eh2wbt5', // <-- your EmailJS Template ID
+        form.current,
+        'SZxZS6St1vL3R9fVf'   // <-- your EmailJS Public Key
+      ).then(
+      (result) => {
+        console.log(result.text);
+        setShowSuccess(true);
+        form.current.reset();
+
+        // ✅ Auto-close after 4 seconds
+        setTimeout(() => {
+          setShowSuccess(false);
+        }, 4000);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+
 
   return (
     <motion.div
       id="Contact"
-      className="h-[1480px] bg-cover bg-center bg-black bg-no-repeat relative w-full md:h-[950px] md:py- py-10 px-4 md:px-78
-  bg-[url('/images/footer.jg')] "
+      className="h-[1480px] bg-cover bg-center bg-black bg-no-repeat relative w-full md:h-full md:pt-30 py-10 px-4 md:px-34
+  bg-[url('/images/footer.jg')] md:bg-[url('/images/Bcc 2.jg')]"
   initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }} // animate once when 30% visible
       variants={fadeUp}
     >
-      <motion.div className="md:h-[600px] md:w-[1300px] w-full h-[1350px] md:top-900 rounded-2xl py- mt-5 grid md:grid-cols-2 md:gap-30 md:items-start"
+      <motion.div className="md:h-[600px] md:w-[1300px] w-full h-[1350px] md:top-900 rounded-2xl py- mt-5 grid md:grid-cols-2 gap-0 md:gap-30 md:items-start"
       variants={fadeUp}
       >
         {/* leftdiv */}
         <div className="md:w-[550px] w-full h-full mt- ml-5 rounded-2xl px-5 bg-cover bg-center bg-no-repeat bg-[url('/images/footer1.jpg')] md:bg-[url('/images/Bcc .jpg')]">
-          <h2 className="text-white flex items-center mt-25 text-[29px] font-semibold">
+          <h2 className="text-white flex items-center md:mt-2 mt-25 md:text-[36px] text-[29px] font-semibold">
             Let's Discuss Something
           </h2>
-          <p className="text-white text-[30px] font-semibold flex items-center">
+          <p className="text-white md:text-[35px] text-[30px] font-semibold flex items-center">
             <span className="mr-2">
               {/* AnimatePresence for animating changing words */}
               <AnimatePresence mode="wait">
@@ -106,15 +128,15 @@ const FooterSection = () => {
                 <div className="w-6 h-6 bg-[#009D66] rounded-full flex items-center justify-center">
                   <img src="/Image/email icon.png" alt="" className="w-4 h-3" />
                 </div>
-                <p className="text-white text-[16px]"> hello.oluwagbemiga@gmail.com</p>
+                <p className="text-white text-[16px] md:mb-"> hello.oluwagbemiga@gmail.com</p>
               </div>
-              <div className="flex gap-6 mt-5 md:ml-30">
+              <div className="flex gap-6 md:mt-[2px] mt-5 md:ml-30">
                 <a
                   href="https://www.linkedin.com/in/oluwagbemigapopoola"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="bg-[#009D66] w-9 h-9 flex items-center justify-center rounded-xl hover:bg-green-800">
+                  <div className="bg-[#009D66] w-9 h-9 flex items-center justify-center rounded hover:bg-green-800">
                     <img src="/Image/linkedin.png" alt="LinkedIn" className="w-5 h-5" />
                   </div>
                 </a>
@@ -124,7 +146,7 @@ const FooterSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="bg-[#009D66] w-9 h-9 flex items-center justify-center rounded-xl hover:bg-green-800">
+                  <div className="bg-[#009D66] w-9 h-9 flex items-center justify-center rounded hover:bg-green-800">
                     <img src="/Image/github.png" alt="GitHub" className="w-5 h-5" />
                   </div>
                 </a>
@@ -133,52 +155,71 @@ const FooterSection = () => {
           </div>
         </div>
         {/* right */}
-        <div id='form' className="space-y-4 w-[px] -mt-10 md:w-[550px] bg-black px-5">
+        <div id='form' className="space-y-4 w-full md:mt-[15px] -mt-40 md:w-[550px] bg-black px-5 flex justify-center flex-col">
           <div className="flex gap">
-            <h3 className="text-[17px] text-white w-[px] font-semibold ml-2">
+            <h3 className="text-[17px] text-white font-semibold ml-2">
               I’ve got what you need{' '}
-              <span className="text-[#009D66] font-bold text-[25px] mt-">Lets talk</span>{' '}
+              <span className="text-[#009D66] font-bold text-[25px]">Lets talk</span>{' '}
             </h3>
           </div>
-          <form className="space-y-4">
+
+          <form ref={form} onSubmit={sendEmail} className="space-y-6">
             <input
               type="text"
+              name="user_name"
               placeholder="Your name"
-              className="w-[300px] h-[50px] md:w-[430px] bg-white text-black px-4 py-4 border-2 border-gren-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
+              required
+              className="w-[95%] h-[50px] md:w-[400px] bg-white text-black px-4 py-4 border-2 border-green-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
             />
             <input
               type="email"
+              name="user_email"
               placeholder="Your email"
-              className="w-[300px] h-[50px] md:w-[430px] bg-white text-black px-4 py-4 border-2 border-gren-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
+              required
+              className="w-[95%] h-[50px] md:w-[400px] bg-white text-black px-4 py-4 border-2 border-green-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
             />
             <textarea
+              name="message"
               rows="4"
               placeholder="Your message"
-              className="w-[300px] md:w-[430px] h-[170px] bg-white text-black px-4 py-2 border-2 border-gren-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800  rounded"
+              required
+              className="w-[95%] md:w-[400px] h-[170px] bg-white text-black px-4 py-2 border-2 border-green-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
             />
             <button
               type="submit"
-              className="w-[300px] md:w-[430px] bg-[#009D66] hover:bg-green-600 text-black py-2 rounded font-semibold"
+              className="w-[95%] md:w-[400px] bg-[#009D66] hover:bg-green-600 text-black py-2 rounded font-semibold"
             >
               Submit
             </button>
           </form>
-          <div
+
+          {/* ✅ Success Message */}
+      {showSuccess && (
+        <div className="mt-4 text-green-500 font-semibold">
+          ✅ Thank you for your message!
+        </div>
+          )}
+
+          {/* <div
             id="home"
-            className="flex-col gap w-8 h-8 flex absolute md:mt-[0px] mt-12 md:bottom-27.5 right-46 md:right-6 items-center justify-center rounded-xl hover:bg-green-950"
+            className="flex-col w-8 h-8 flex absolute md:mt-[0px] mt-12 md:bottom-60 right-54 md:right-30 items-center justify-center rounded-xl hover:bg-green-950"
           >
             <img
               src="/Image/arrow.png"
-              alt="GitHub"
+              alt="arrow"
               className="w-12 h-8"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             />
-          </div>
-          <p className="text-[12px] absolute leading-[24px] text-[#AEAEAE] tracking-normal font-[355] w-[300px] mt-30 x] text-center ">
-            © 2025 BelovethDev. All rights reserved.
-          </p>
+          </div> */}
+          
         </div>
       </motion.div>
+      {/* Copyright Text Centering */}
+  <div className="absolute bottom-0 left-0 right-0 md:mb-8 md:mt-10 flex justify-center items-center py-4">
+    <p className="text-[12px] md:text-[18px] leading-[24px] text-[#AEAEAE] tracking-normal font-[355] text-center">
+      © 2025 BelovethDev. All rights reserved.
+    </p>
+  </div>
     </motion.div>
   );
 };

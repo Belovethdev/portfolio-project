@@ -6,16 +6,16 @@ const MyskillSection = () => {
         show: {  opacity: 1,y: 0},
     };
     return (
-        <div id='Portfolio' className='flex flex-col md:grid md:grid-cols-2 md:py-36 px-12 md:px-78 justify-between md:items-center md:gap-20 w-full py-6 mt- bg-black'>
+        <div id='Portfolio' className='flex flex-col md:grid md:grid-cols-2 md:py-28 px-12 md:px-46 justify-between md:items-center md:gap-15 w-full py-6 mt- bg-black'>
                 <div className='mt-15'>
-                    <img src="/images/workstation.jpg" alt="" className='md:w-full md:h-full w-[312px] h-[186px] rounded' />
+                    <img src="/images/workstation.jpg" alt="" className='md:w-full md:h-[330px] w-[312px] h-[186px] rounded' />
                 </div>
-                <div className='md:ml-30 md:pt-20 mt-5'>
+                <div className='md:ml-30 md:pt-10 mt-5'>
                     <div>
-                        <h1 className='text-[#009D66] md:text-5xl text-[32px] font-bold mb-1 md:mb-6'>My Skills</h1>
-                        <p className='text-white text-[16px] md:text-2xl md:mb-10 mb-8 -ml-[1px]'>Technologies I’ve been working with recently</p>
+                        <h1 className='text-[#009D66] md:text-5xl text-[32px] font-bold mb-1 md:mb-4'>My Skills</h1>
+                        <p className='text-white text-[18px] md:text-[20px] md:mb-10 mb-8 -ml-[1px]'>Technologies I’ve been working with recently</p>
                     </div>
-                    <div className='grid grid-cols-4 md:grid-cols-5 gap-6'>
+                    <div className='grid grid-cols-4 md:grid-cols-5 gap-5 md:gap-8'>
                     {/* <div className='md:flex grid grid-cols-4 gap-6'> */}
                         <div className="bg-[#009D66] md:w-20 md:h-20 w-13 h-13 flex items-center justify-center rounded-[px]">
                         <img
@@ -97,7 +97,6 @@ const MyskillSection = () => {
                     {/* </div> */}
                     </div>
                 </div>
-                {/* projects */}
         
             </div>
     )
