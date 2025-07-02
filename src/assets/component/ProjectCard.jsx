@@ -28,10 +28,10 @@ export default function ProjectCard({ projects }) {
 
   return (
     <div className="py-10 md:px-46 px-12 bg-black">
-      <h2 className="text-[#009D66] md:w-[]  w-[400px] text-[32px] md:text-5xl font-bold mb-1 md:mb-3">
+      <h2 className="text-[#009D66] md:w-[]  w-[400px] text-[32px] md:text-[32px] font-bold mb-1 md:mb-3">
         Selected Projects
       </h2>
-      <p className="text-white text-[16px] md:text-2xl mb-5 md:mb-10 -ml-[1px]">
+      <p className="text-white text-[16px] md:text-[20px] mb-5 md:mb-10 -ml-[1px]">
         Some things I’ve worked on so far
       </p>
 

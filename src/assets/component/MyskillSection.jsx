@@ -12,7 +12,7 @@ const MyskillSection = () => {
                 </div>
                 <div className='md:ml-30 md:pt-10 mt-5'>
                     <div>
-                        <h1 className='text-[#009D66] md:text-5xl text-[32px] font-bold mb-1 md:mb-4'>My Skills</h1>
+                        <h1 className='text-[#009D66] md:text-[32px] text-[32px] font-bold mb-1 md:mb-4'>My Skills</h1>
                         <p className='text-white text-[18px] md:text-[20px] md:mb-10 mb-8 -ml-[1px]'>Technologies I’ve been working with recently</p>
                     </div>
                     <div className='grid grid-cols-4 md:grid-cols-5 gap-5 md:gap-8'>

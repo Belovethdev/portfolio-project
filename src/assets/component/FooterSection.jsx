@@ -60,7 +60,7 @@ const FooterSection = () => {
     <motion.div
       id="Contact"
       className="h-[1480px] bg-cover bg-center bg-black bg-no-repeat relative w-full md:h-full md:pt-30 py-10 px-4 md:px-34
-  bg-[url('/images/footer.jg')] md:bg-[url('/images/Bcc 2.jg')]"
+  bg-[url('/images/footer.jpg')] md:bg-[url('/images/Bcc 2.jpg')]"
   initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }} // animate once when 30% visible
@@ -85,7 +85,7 @@ const FooterSection = () => {
                   animate="animate"
                   exit="exit"
                   transition={{ duration: 0.6 }}
-                  className="text-[#009D66] inline-block"
+                  className="text-[#009D66] font-bold inline-block"
                 >
                   {words[index]}
                 </motion.span>
@@ -106,7 +106,7 @@ const FooterSection = () => {
             ].map((tag) => (
               <span
                 key={tag}
-                className="px-6 py-1 text-sm bg-transparent border border-[#009D66] text-white hover:text-black hover:bg-green-800 hover:font-semibold rounded-[8px]"
+                className="px-6 py-1 text-sm bg-transparent border border-[#009D66] text-white hover:text-black hover:bg-[#009D66] hover:font-semibold rounded-[8px]"
               >
                 {tag}
               </span>
@@ -187,7 +187,7 @@ const FooterSection = () => {
             />
             <button
               type="submit"
-              className="w-[95%] md:w-[400px] bg-[#009D66] hover:bg-green-600 text-black py-2 rounded font-semibold"
+              className="w-[95%] md:w-[400px] bg-[#009D66] hover:bg-green-800 text-black py-2 rounded font-semibold"
             >
               Submit
             </button>
