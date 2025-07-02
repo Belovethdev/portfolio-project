@@ -46,7 +46,7 @@ const HeroSection = () => {
           transition={{ duration: 1.2, ease: 'easeOut' }}
           className="text-3xl md:text-[66px] w-[300px] md:w-[800px] text-[#009D66] text-left font-bold  md:mb-0"
         >
-          Designing Experiences. Building the Future
+          Designing Experiences, Building the Future.
         </motion.h1>
 
         {/* Description */}
