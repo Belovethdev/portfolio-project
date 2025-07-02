@@ -18,7 +18,7 @@ const AboutSection = () => {
     <motion.div
       id="About"
       className="relative md:py-30 px-12 md:px-46 h-full bg-cover bg-center bg-no-repeat w-full
-             bg-[url('/images/mobile2.jpg')] md:bg-[url('/images/screen.jpg')]"
+             bg-[url('/images/mobile3.jpg')] md:bg-[url('/images/screen.jpg')]"
       
       
       initial="hidden"
@@ -53,4 +53,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection
+export default AboutSection;
