@@ -195,7 +195,7 @@ const FooterSection = () => {
 
           {/* ✅ Success Message */}
       {showSuccess && (
-        <div className="mt-4 text-green-500 font-semibold">
+        <div className="mt-4 text-[#009D66] font-semibold">
           ✅ Thank you for your message!
         </div>
           )}
