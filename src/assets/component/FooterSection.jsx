@@ -60,7 +60,7 @@ const FooterSection = () => {
     <motion.div
       id="Contact"
       className="h-[1480px] bg-cover bg-center bg-black bg-no-repeat relative w-full md:h-full md:pt-30 py-10 px-4 md:px-34
-  bg-[url('/images/footer.jpg')] md:bg-[url('/images/Bcc 2.jpg')]"
+  bg-[url('/images/footer.jpg')] md:bg-[url('/images/Bcc2.jpg')]"
   initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }} // animate once when 30% visible
