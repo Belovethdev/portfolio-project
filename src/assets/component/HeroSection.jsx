@@ -12,7 +12,7 @@ const slideUp = {
 
 const HeroSection = () => {
   return (
-<section className="relative w-full min-h-screen overflow-hidden px-4 md:px-16">
+<section className="relative w-full min-h-screen overflow-hidden dark:bg-black dark:text-black px-4 md:px-16">
   {/* Mobile Background */}
   <div className="absolute inset-0 md:hidden h-[60rem] md:h-100vh w-100% bg-[url('/images/background22.jpg')] bg-cover bg-center bg-no-repeat" />
 
@@ -44,7 +44,7 @@ const HeroSection = () => {
         <motion.h1
           variants={slideRight}
           transition={{ duration: 1.2, ease: 'easeOut' }}
-          className="text-3xl md:text-[66px] w-[300px] md:w-[800px] text-[#009D66] text-left font-bold  md:mb-0"
+          className="text-3xl md:text-[66px] w-[300px] md:w-[800px] text-[#38EDCA] text-left font-bold  md:mb-0"
         >
           Designing Experiences, Building the Future.
         </motion.h1>
@@ -64,7 +64,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="flex flex-row items-start md:items-center gap-10 md:gap-40 mt-20 md:mt-16"
         >
-          <button className="md:h-[50px] md:w-[161px] h-7 bg-[#009D66] rounded hover:bg-green-800 px-4">
+          <button className="md:h-[50px] md:w-[161px] h-7 bg-[#38EDCA] rounded hover:bg-green-800 px-4">
             <a
               href="/POPOOLA OLUWAGBEMIGA.pdf"
               target="_blank"
@@ -81,9 +81,9 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-[#009D66] w-7 md:w-12 h-7 md:h-12 flex items-center justify-center rounded hover:bg-green-800">
+              <div className="bg-[#38EDCA] w-7 md:w-12 h-7 md:h-12 flex items-center justify-center rounded hover:bg-[#04B390]">
                 <img
-                  src="/Image/linkedin.png"
+                  src="/images/linkedin.png"
                   alt="LinkedIn"
                   className="w-5 h-5 md:w-8 md:h-8"
                 />
@@ -95,9 +95,9 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-[#009D66] w-7 md:w-12 h-7 md:h-12 flex items-center justify-center rounded hover:bg-green-800">
+              <div className="bg-[#38EDCA] w-7 md:w-12 h-7 md:h-12 flex items-center justify-center rounded hover:bg-[#04B390]">
                 <img
-                  src="/Image/github.png"
+                  src="/images/github.png"
                   alt="GitHub"
                   className="w-5 h-5 md:w-8 md:h-8"
                 />

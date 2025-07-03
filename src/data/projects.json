@@ -6,7 +6,6 @@
       {
         "id": 1,
         "image": "/images/hm.jpg",
-        "img": "/images/yellowball.jng",
         "title": "PLIT LEARN",
         "sub": "(Educational Website)",
         "description": "A full-stack educational website for Plit Learn using React.js, Tailwind CSS, and a Python backend to showcase courses and key info. Improved user engagement by 20% in 3 months and boosted seamless payments by 60% with a custom payment API."
@@ -20,8 +19,8 @@
         },
       {
         "id": 3,
-        "image": "/images/job2.jpg",
-        "title": "HIRE NOW",
+        "image": "/images/job1.jpg",
+        "title": "JOBIFY",
         "sub": "(Job Listing Website)",
         "description": "A job listing web application built using React.js, Tailwind CSS, and Flask. Included advanced job filtering, resume uploads, and employer management tools. Improved job seeker engagement by 40% and automated email alerts boosted application submissions by 60%."
         },

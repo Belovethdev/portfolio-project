@@ -38,12 +38,12 @@ function Navbar() {
         isFixed ? 'fixed top-0 left-0' : 'absolute top-0 left-0 px-[5px] md:px-25 py-2 md:py-5'
       }`}
     >
-      <div className="md:px-15 px-10 py-2 md:py-4 flex md:justify-between gap-50 md:gap-50 items-center">
+      <div className="md:px-15 px-10 py-2 md:py-4 flex md:justify-between gap-40 md:gap-50 items-center">
         {/* Logo */}
         <img
-          src="/Image/logo.png"
+          src="/images/logo2.jpg"
           alt="Logo"
-          className="md:w-[200px] md:h-[50px] w-[80px] h-[25px] cursor-pointer"
+          className="md:w-[220px] md:h-[50px] w-[120px] h-[25px] cursor-pointer"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
             setMenuOpen(false);

@@ -85,7 +85,7 @@ const FooterSection = () => {
                   animate="animate"
                   exit="exit"
                   transition={{ duration: 0.6 }}
-                  className="text-[#009D66] font-bold inline-block"
+                  className="text-[#38EDCA] font-bold inline-block"
                 >
                   {words[index]}
                 </motion.span>
@@ -106,27 +106,27 @@ const FooterSection = () => {
             ].map((tag) => (
               <span
                 key={tag}
-                className="px-6 py-1 text-sm bg-transparent border border-[#009D66] text-white hover:text-black hover:bg-[#009D66] hover:font-semibold rounded-[8px]"
+                className="px-6 py-1 text-sm bg-transparent border border-[#38EDCA] text-white hover:text-black hover:bg-[#04B390] hover:font-semibold rounded-[8px]"
               >
                 {tag}
               </span>
             ))}
           </div>
-          <button className="bg-[#009D66] text-black font-semibold px-2 py-1 rounded-[8px] hover:bg-green-800 mt-15 text-[15px]"> <a href="#form">Hire me Now</a>
+          <button className="bg-[#38EDCA] text-black font-semibold px-2 py-1 rounded-[8px] hover:bg-[#04B390] mt-15 text-[15px]"> <a href="#form">Hire me Now</a>
             
           </button>
 
           <div className="text-sm space-y-2 mt-4">
             <div className="flex items-center gap-3">
-              <div className="w-6 h-6 bg-[#009D66] rounded-full flex items-center justify-center">
-                <img src="/Image/call icon.png" alt="" className="w-4 h-4" />
+              <div className="w-6 h-6 bg-[#38EDCA] rounded-full flex items-center justify-center">
+                <img src="/images/call icon.png" alt="" className="w-4 h-4" />
               </div>
               <p className="text-white text-[16px]"> +234 705 725 3514</p>
             </div>
             <div className="flex md:flex-row flex-col md:items-center gap-3">
               <div className="flex gap-4">
-                <div className="w-6 h-6 bg-[#009D66] rounded-full flex items-center justify-center">
-                  <img src="/Image/email icon.png" alt="" className="w-4 h-3" />
+                <div className="w-6 h-6 bg-[#38EDCA] rounded-full flex items-center justify-center">
+                  <img src="/images/email icon.png" alt="" className="w-4 h-3" />
                 </div>
                 <p className="text-white text-[16px] md:mb-"> hello.oluwagbemiga@gmail.com</p>
               </div>
@@ -136,8 +136,8 @@ const FooterSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="bg-[#009D66] w-9 h-9 flex items-center justify-center rounded hover:bg-green-800">
-                    <img src="/Image/linkedin.png" alt="LinkedIn" className="w-5 h-5" />
+                  <div className="bg-[#38EDCA] w-9 h-9 flex items-center justify-center rounded hover:bg-[#04B390]">
+                    <img src="/images/linkedin.png" alt="LinkedIn" className="w-5 h-5" />
                   </div>
                 </a>
 
@@ -146,8 +146,8 @@ const FooterSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="bg-[#009D66] w-9 h-9 flex items-center justify-center rounded hover:bg-green-800">
-                    <img src="/Image/github.png" alt="GitHub" className="w-5 h-5" />
+                  <div className="bg-[#38EDCA] w-9 h-9 flex items-center justify-center rounded hover:bg-[[#04B390]]">
+                    <img src="images/github.png" alt="GitHub" className="w-5 h-5" />
                   </div>
                 </a>
               </div>
@@ -159,7 +159,7 @@ const FooterSection = () => {
           <div className="flex gap">
             <h3 className="text-[17px] text-white font-semibold ml-2">
               I’ve got what you need{' '}
-              <span className="text-[#009D66] font-bold text-[25px]">Lets talk</span>{' '}
+              <span className="text-[#38EDCA] font-bold text-[25px]">Lets talk</span>{' '}
             </h3>
           </div>
 
@@ -169,25 +169,25 @@ const FooterSection = () => {
               name="user_name"
               placeholder="Your name"
               required
-              className="w-[95%] h-[50px] md:w-[400px] bg-white text-black px-4 py-4 border-2 border-green-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
+              className="w-[95%] h-[50px] md:w-[400px] bg-white text-black px-4 py-4 border-2 border-[#38EDCA] text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
             />
             <input
               type="email"
               name="user_email"
               placeholder="Your email"
               required
-              className="w-[95%] h-[50px] md:w-[400px] bg-white text-black px-4 py-4 border-2 border-green-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
+              className="w-[95%] h-[50px] md:w-[400px] bg-white text-black px-4 py-4 border-2 border-[#38EDCA] text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
             />
             <textarea
               name="message"
               rows="4"
               placeholder="Your message"
               required
-              className="w-[95%] md:w-[400px] h-[170px] bg-white text-black px-4 py-2 border-2 border-green-600 text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
+              className="w-[95%] md:w-[400px] h-[170px] bg-white text-black px-4 py-2 border-2 border-[#38EDCA] text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
             />
             <button
               type="submit"
-              className="w-[95%] md:w-[400px] bg-[#009D66] hover:bg-green-800 text-black py-2 rounded font-semibold"
+              className="w-[95%] md:w-[400px] bg-[#38EDCA] hover:bg-[#04B390] text-black py-2 rounded font-semibold"
             >
               Submit
             </button>
@@ -195,7 +195,7 @@ const FooterSection = () => {
 
           {/* ✅ Success Message */}
       {showSuccess && (
-        <div className="mt-4 text-[#009D66] font-semibold">
+        <div className="mt-4 text-[#38EDCA] font-semibold">
           ✅ Thank you for your message!
         </div>
           )}

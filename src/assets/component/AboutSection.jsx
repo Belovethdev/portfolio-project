@@ -17,7 +17,7 @@ const AboutSection = () => {
   return (
     <motion.div
       id="About"
-      className="relative md:py-30 px-12 md:px-46 h-full bg-cover bg-center bg-no-repeat w-full
+      className="relative md:py-30 px-12 md:px-46 h-full bg-cover bg-center dark:bg-black dark:text-white bg-no-repeat w-full
              bg-[url('/images/mobile3.jpg')] md:bg-[url('/images/screen.jpg')]"
       
       
@@ -31,7 +31,7 @@ const AboutSection = () => {
     {/* <div className="w-full h-full bg-gradient-to-r from-black via-transparent to-transparent" /> */}
     <div className="w-full h-100 bg-gradient-to-b from-black/70 via-transparent to-transparent absolute top-0 left-0" />
   </div>
-      <h2 className="text-[#009D66] text-3xl md:text-[32px] font-extrabold md:mt- md:pt-0 pt-20 md:pb-0 pb-10 md:mb-10">
+      <h2 className="text-[#38EDCA] text-3xl md:text-[32px] font-extrabold md:mt- md:pt-0 pt-20 md:pb-0 pb-10 md:mb-10">
         ABOUT
       </h2>
 
