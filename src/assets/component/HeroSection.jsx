@@ -64,7 +64,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="flex flex-row items-start md:items-center gap-10 md:gap-40 mt-20 md:mt-16"
         >
-          <button className="md:h-[50px] md:w-[161px] h-7 bg-[#38EDCA] rounded hover:bg-green-800 px-4">
+          <button className="md:h-[50px] md:w-[161px] h-7 bg-[#38EDCA] rounded hover:bg-[#04B390] px-4">
             <a
               href="/POPOOLA OLUWAGBEMIGA.pdf"
               target="_blank"

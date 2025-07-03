@@ -34,7 +34,7 @@ const FooterSection = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        'service_sdohg7m',  // <-- change to your EmailJS Service ID
+        'service_11gtwvo',  // <-- change to your EmailJS Service ID
         'template_eh2wbt5', // <-- your EmailJS Template ID
         form.current,
         'SZxZS6St1vL3R9fVf'   // <-- your EmailJS Public Key
@@ -146,8 +146,8 @@ const FooterSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="bg-[#38EDCA] w-9 h-9 flex items-center justify-center rounded hover:bg-[[#04B390]]">
-                    <img src="images/github.png" alt="GitHub" className="w-5 h-5" />
+                  <div className="bg-[#38EDCA] w-9 h-9 flex items-center justify-center rounded hover:bg-[#04B390]">
+                    <img src="/images/github.png" alt="GitHub" className="w-5 h-5" />
                   </div>
                 </a>
               </div>
@@ -176,7 +176,7 @@ const FooterSection = () => {
               name="user_email"
               placeholder="Your email"
               required
-              className="w-[95%] h-[50px] md:w-[400px] bg-white text-black px-4 py-4 border-2 border-[#38EDCA] text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
+              className="w-[95%] h-[50px] md:w-[400px] bg-white text-black px-4 py-4 border-2 border-[#38EDCA]text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
             />
             <textarea
               name="message"
@@ -187,7 +187,7 @@ const FooterSection = () => {
             />
             <button
               type="submit"
-              className="w-[95%] md:w-[400px] bg-[#38EDCA] hover:bg-[#04B390] text-black py-2 rounded font-semibold"
+              className="w-[95%] md:w-[400px] bg-[#38EDCA] hover:bg-[#04B390] cursor-pointer text-black py-2 rounded font-semibold"
             >
               Submit
             </button>
