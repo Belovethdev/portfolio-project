@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser'; // ✅ Import EmailJS
 const words = ['Innovative', 'Exciting', 'Creative', 'Brilliant', 'Cool'];
 
 const FooterSection = () => {
+  const year = new Date().getFullYear();
   const [index, setIndex] = useState(0);
   const [done, setDone] = useState(false); // ✅ Success message
   const form = useRef();
@@ -85,7 +86,7 @@ const FooterSection = () => {
                   animate="animate"
                   exit="exit"
                   transition={{ duration: 0.6 }}
-                  className="text-[#38EDCA] font-bold inline-block"
+                  className="text-[#38EDCA] font-bold md:font-extrabold inline-block"
                 >
                   {words[index]}
                 </motion.span>
@@ -183,7 +184,7 @@ const FooterSection = () => {
               rows="4"
               placeholder="Your message"
               required
-              className="w-[95%] md:w-[400px] h-[170px] bg-white text-black px-4 py-2 border-2 border-[#38EDCA] text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded"
+              className="w-[95%] md:w-[400px] h-[170px] bg-white text-black px-4 py-2 border-2 border-[#38EDCA] text-sm focus:outline-none focus:ring-2 focus:ring-green-800 rounded resize-none"
             />
             <button
               type="submit"
@@ -217,7 +218,7 @@ const FooterSection = () => {
       {/* Copyright Text Centering */}
   <div className="absolute bottom-0 left-0 right-0 md:mb-8 md:mt-10 flex justify-center items-center py-4">
     <p className="text-[12px] md:text-[18px] leading-[24px] text-[#AEAEAE] tracking-normal font-[355] text-center">
-      © 2025 BelovethDev. All rights reserved.
+      © {year} BelovethDev. All rights reserved.
     </p>
   </div>
     </motion.div>

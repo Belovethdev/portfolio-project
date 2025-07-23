@@ -66,7 +66,7 @@ const HeroSection = () => {
         >
           <button className="md:h-[50px] md:w-[161px] h-7 bg-[#38EDCA] rounded hover:bg-[#04B390] px-4">
             <a
-              href="/POPOOLA OLUWAGBEMIGA.pdf"
+              href="/POPOOLA OLUWAGBEMIGA1.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black text-xl md:text-3xl font-bold"

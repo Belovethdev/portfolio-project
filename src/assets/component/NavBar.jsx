@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import ToogleTheme from '../../hook/ToogleTheme';
 
 function Navbar() {
   const [isFixed, setIsFixed] = useState(false);
@@ -34,7 +35,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`md-full md:h-[120px] w-full h-[80px] px-[5px] md:px-25 py-6 md:py-5 bg-black opacity- z-50 ${
+      className={`md-full md:h-[120px] w-full h-[80px] px-[5px] md:px-25 py-6 md:py-5  bg-black opacity- z-50 ${
         isFixed ? 'fixed top-0 left-0' : 'absolute top-0 left-0 px-[5px] md:px-25 py-2 md:py-5'
       }`}
     >
@@ -51,7 +52,7 @@ function Navbar() {
         />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-10 text-white text-[18px] font-bold">
+        <ul className="hidden md:flex gap-10 text-white dark:text-black text-[18px] font-bold">
           <li><a href="#home" className="hover:text-[22px] cursor-pointer">Home</a></li>
           <li><a href="#About" className="hover:text-[22px] cursor-pointer">About</a></li>
           <li><a href="#Portfolio" className="hover:text-[22px] cursor-pointer">Portfolio</a></li>
@@ -74,6 +75,7 @@ function Navbar() {
             </button>
           )}
         </div>
+        {/* <ToogleTheme/> */}
       </div>
 
       {/* Slide-in Menu from Right */}
