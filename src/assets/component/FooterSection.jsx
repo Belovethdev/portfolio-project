@@ -217,7 +217,7 @@ const FooterSection = () => {
       </motion.div>
       {/* Copyright Text Centering */}
   <div className="absolute bottom-0 left-0 right-0 md:mb-8 md:mt-10 flex justify-center items-center py-4">
-    <p className="text-[12px] md:text-[18px] leading-[24px] text-[#AEAEAE] tracking-normal font-[355] text-center">
+    <p className="text-[12px] md:text-[16px] leading-[24px] text-[#AEAEAE] tracking-normal font-[355] text-center">
       © {year} BelovethDev. All rights reserved.
     </p>
   </div>

@@ -26,7 +26,7 @@ const ToogleTheme = () => {
     <div>
         <button
       onClick={() => setIsDark(!isDark)}
-      className="fixed top-4 right-4 p-2 rounded bg-gray-200 text-black dark:bg-gray-800 dark:text-white"
+      className="fixed top-4 right-4 p-2 rounded bg-white text-black dark:bg-gray-950 dark:text-white"
     >
       {isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}
     </button>

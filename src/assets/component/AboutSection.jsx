@@ -40,7 +40,7 @@ const AboutSection = () => {
         variants={fadeUp}
       >
         <p>
-          Frontend Developer who specializes in modern JavaScript and React.js, with 1+ year of experience crafting high performance, and scalable web applications.
+          Frontend Developer who specializes in modern JavaScript and React.js, with 2years + of experience crafting high performance, and scalable web applications.
         </p>
         <p>
           Skilled in Tailwind CSS, HTML5, and CSS3, with a strong focus on responsive design, accessibility, and crossbrowser compatibility. Passionate about transforming UI/UX designs into seamless, interactive experiences through clean, and maintainable code.
