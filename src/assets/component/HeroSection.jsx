@@ -64,7 +64,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="flex flex-row items-start md:items-center gap-10 md:gap-40 mt-20 md:mt-16"
         >
-          <button className="md:h-[50px] md:w-[161px] h-7 bg-[#38EDCA] rounded hover:bg-[#04B390] px-4">
+          <button className="md:h-[50px] md:w-[161px] h-7 bg-[#38EDCA] rounded-[10px] hover:bg-[#04B390] px-4">
             <a
               href="/POPOOLA OLUWAGBEMIGA.pdf"
               target="_blank"
@@ -81,7 +81,7 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-[#38EDCA] w-7 md:w-12 h-7 md:h-12 flex items-center justify-center rounded hover:bg-[#04B390]">
+              <div className="bg-[#38EDCA] w-7 md:w-12 h-7 md:h-12 flex items-center justify-center rounded-[10px] hover:bg-[#04B390]">
                 <img
                   src="/images/linkedin.png"
                   alt="LinkedIn"
@@ -95,7 +95,7 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-[#38EDCA] w-7 md:w-12 h-7 md:h-12 flex items-center justify-center rounded hover:bg-[#04B390]">
+              <div className="bg-[#38EDCA] w-7 md:w-12 h-7 md:h-12 flex items-center justify-center rounded-[10px] hover:bg-[#04B390]">
                 <img
                   src="/images/github.png"
                   alt="GitHub"
