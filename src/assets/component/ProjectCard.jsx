@@ -46,7 +46,7 @@ export default function ProjectCard({ projects }) {
         {safeProjects.map((project) => (
           <motion.div
             key={project.id}
-            className="border border-[#38EDCA] bg-[#0a0a0a] rounded overflow-hidden flex flex-col"
+            className="border border-[#38EDCA] bg-[#0a0a0a] rounded overflow-hidden flex flex-col hover:origin-top transform:translateY(-12px)"
             variants={cardVariants}
           >
             <img
